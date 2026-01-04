@@ -1,6 +1,6 @@
 {
     "name": "@hoangg04/media-picker",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A reusable MediaPicker module inspired by WordPress Media Library. Framework-agnostic with Adapter Pattern for data access.",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
