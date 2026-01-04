@@ -1,0 +1,60 @@
+{
+    "name": "@hoangg04/media-picker",
+    "version": "1.0.0",
+    "description": "A reusable MediaPicker module inspired by WordPress Media Library. Framework-agnostic with Adapter Pattern for data access.",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts --external react --external react-dom --external @radix-ui/react-dialog --external zustand",
+        "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+        "lint": "eslint src",
+        "clean": "rimraf dist",
+        "prepublishOnly": "npm run build"
+    },
+    "peerDependencies": {
+        "@radix-ui/react-dialog": "^1.0.0",
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0",
+        "zustand": "^4.0.0 || ^5.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.0",
+        "@types/react-dom": "^19.0.0",
+        "rimraf": "^5.0.0",
+        "tsup": "^8.0.0",
+        "typescript": "^5.0.0"
+    },
+    "keywords": [
+        "react",
+        "media-picker",
+        "media-library",
+        "image-picker",
+        "file-upload",
+        "wordpress",
+        "radix-ui",
+        "headless",
+        "component"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hoangg04/media-picker.git"
+    },
+    "bugs": {
+        "url": "https://github.com/hoangg04/media-picker/issues"
+    },
+    "homepage": "https://github.com/hoangg04/media-picker#readme"
+}
