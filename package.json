@@ -56,5 +56,8 @@
     "bugs": {
         "url": "https://github.com/hoangg04/media-picker/issues"
     },
-    "homepage": "https://github.com/hoangg04/media-picker#readme"
+    "homepage": "https://github.com/hoangg04/media-picker#readme",
+    "publishConfig": {
+        "access": "public"
+    }
 }
